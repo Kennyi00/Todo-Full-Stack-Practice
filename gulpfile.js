@@ -79,7 +79,7 @@ gulp.task('js-watch', gulp.task('webpack'), function (done) {
 });
 
 gulp.task('submit', cb => {
-	exec('git add -A && git commit -m \'Made a minor change\' && git push origin main', (err, success) => {
+	exec('git add -A && git commit -m \"Made a minor change\" && git push origin main', (err, success) => {
 		if(err) {
 			console.log(err)
 			cb(err)
@@ -87,4 +87,5 @@ gulp.task('submit', cb => {
 			console.log(success)
 		}
 	})
-})
+})   
+
